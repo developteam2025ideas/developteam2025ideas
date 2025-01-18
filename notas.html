@@ -76,6 +76,7 @@ body {
   cursor: pointer;
   transition: all 0.2s;
   box-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  width:40%;
 }
 
 .app-icon:active {
@@ -547,7 +548,7 @@ input:checked + .toggle-slider:before {
 
 .control-center-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 8px;
   margin-bottom: 12px;
 }
@@ -976,12 +977,42 @@ input:checked + .toggle-slider:before {
 </div>
 
 <div class="app-grid">
-  
-  <div style="width: 50%;" class="app-icon" onclick="openApp(&apos;tasks&apos;)">
+  <div class="app-icon" onclick="openApp(&apos;notes&apos;)">
+    <i class="bi bi-journal-text"></i>
+    <span>Notes</span>
+  </div>
+  <div class="app-icon" onclick="openApp(&apos;calendar&apos;)">
+    <i class="bi bi-calendar3"></i>
+    <span>Calendar</span>
+  </div>
+  <div class="app-icon" onclick="openApp(&apos;weather&apos;)">
+    <i class="bi bi-cloud-sun"></i>
+    <span>Weather</span>
+  </div>
+  <div class="app-icon" onclick="openApp(&apos;calculator&apos;)">
+    <i class="bi bi-calculator"></i>
+    <span>Calculator</span>
+  </div>
+  <div class="app-icon" onclick="openApp(&apos;tasks&apos;)">
     <i class="bi bi-check2-square"></i>
     <span>Tasks</span>
   </div>
-  
+  <div class="app-icon" onclick="openApp(&apos;contacts&apos;)">
+    <i class="bi bi-person-lines-fill"></i>
+    <span>Contacts</span>
+  </div>
+  <div class="app-icon" onclick="openApp(&apos;settings&apos;)">
+    <i class="bi bi-gear"></i>
+    <span>Settings</span>
+  </div>
+  <div class="app-icon" onclick="openApp(&apos;files&apos;)">
+    <i class="bi bi-folder2"></i>
+    <span>Files</span>
+  </div>
+  <div class="app-icon" onclick="openApp(&apos;terminal&apos;)">
+    <i class="bi bi-terminal"></i>
+    <span>Terminal</span>
+  </div>
 </div>
 
 <div id="notes" class="app-window">
