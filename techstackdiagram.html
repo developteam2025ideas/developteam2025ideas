@@ -7,7 +7,63 @@
 </head>
 <body>
   <div class="container">
-    <h1>Sergio Ivorra Puig AND Mario Tomas Agullo</h1>
+  <style>
+    .container {
+      
+      
+    }
+
+    .img-circle {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%; /* Esto convierte la imagen en un círculo */
+      overflow: hidden; /* Oculta las partes de la imagen que sobresalgan del contenedor circular */
+      border: 2px solid #ccc; /* Opcional: un borde alrededor del círculo */
+    }
+
+    /* Asegura que la imagen ocupe todo el contenedor */
+    .img-circle img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* Cubre todo el contenedor sin perder proporción */
+    }
+
+    /* Opcional: estilo para el bloque de texto */
+    .profile-text {
+      font-size: 1.2em;
+      font-weight: bold;
+    }
+  </style>
+    
+<!-- Perfil de Sergio Ivorra Puig -->
+<div class="profile">
+  <div class="img-circle" 
+       onclick="window.location.href='https://www.linkedin.com/in/sergio-ivorra-puig-140079343/'" 
+       style="cursor: pointer;">
+    <img src="https://developer-team-2025.github.io/DEVELOPER-TEAM-2025/assets/imgs/S3.JPG" alt="Imagen de Sergio Ivorra Puig">
+  </div>
+  <div class="profile-text">
+    <a style="color:white;" href="https://www.linkedin.com/in/sergio-ivorra-puig-140079343/" target="_blank">
+      Sergio Ivorra Puig
+    </a>
+  </div>
+</div>
+
+<!-- Perfil de Mario Tomas Agullo -->
+<div class="profile">
+  <div class="img-circle" 
+       onclick="window.location.href='https://www.linkedin.com/in/mario-tomas-93b909318/'" 
+       style="cursor: pointer;">
+    <img src="https://developer-team-2025.github.io/DEVELOPER-TEAM-2025/assets/imgs/mario.jpg" alt="Imagen de Mario Tomas Agullo">
+  </div>
+  <div class="profile-text">
+    <a style="color:white;" href="https://www.linkedin.com/in/mario-tomas-93b909318/" target="_blank">
+      Mario Tomas Agullo
+    </a>
+  </div>
+</div>
+
+
     <div id="graph"></div>
     <div id="details" class="details-panel">
       <a href="https://www.youtube.com/@shopify-espa%C3%B1a">Youtube</a>

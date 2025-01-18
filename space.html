@@ -1311,7 +1311,14 @@ function updateParticleSpeed(event) {
 }
 function updateInfoText(formation) {
   const infoElement = document.getElementById('info');
-  infoElement.innerHTML = `Sergio Ivorra Puig AND Mario Tomas Agullo <br>Current Formation: ${formation.charAt(0).toUpperCase() + formation.slice(1)}`;
+  infoElement.innerHTML = `  
+  <span style="cursor:pointer; color:orange;"  onclick="window.open('https://www.linkedin.com/in/sergio-ivorra-puig-140079343/', '_blank')" style="cursor:pointer; color:blue; text-decoration:underline;">
+    Sergio Ivorra Puig
+  </span> 
+  AND 
+  <span style="cursor:pointer; color:orange;" onclick="window.open('https://www.linkedin.com/in/mario-tomas-93b909318/', '_blank')" style="cursor:pointer; color:blue; text-decoration:underline;">
+    Mario Tomas Agullo
+  </span> <br>Current Formation: ${formation.charAt(0).toUpperCase() + formation.slice(1)}`;
 }
 function resetView() {
   gsap.to(camera.position, {
